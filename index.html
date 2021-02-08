@@ -1,179 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Bootstrap 5 CDN -->
+    <meta charset="utf-8" />
+    <title>FiMy</title>
+
+    <!-- Bootstrap Quick Start -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
-
-    <!-- CSS style file -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- JavaScript Bundle with Popper -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Font Awesome icons -->
     <script src="https://kit.fontawesome.com/603430a21d.js"></script>
-    <title>Diaper Choice</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
-    <!-- Title Section -->
-    <section id="title">
+    <!-- title section -->
+    <section class="title-section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Diaper Choice</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="">Contact</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="">Download</a>
-                </li>
-              </ul>
-            </div>
+          <a class="navbar-brand" href="#">FiMy</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbartogglerdata"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbartogglerdata">
+            <ul class="navbar-nav ml-auto">
+              <li class="navbar-item">
+                <a class="nav-link" href="#foot">Contact</a>
+              </li>
+              <li class="navbar-item">
+                <a class="nav-link" href="#pricing">Pricing</a>
+              </li>
+              <li class="navbar-item">
+                <a class="nav-link" href="#">Download</a>
+              </li>
+            </ul>
           </div>
         </nav>
         <div class="row">
-          <div class="col-lg-6 col-md-4">
-            <h1 id="mainhead">High Quality Diapere at Cheep Price</h1>
-            <button type="button" class="btn btn-dark btn-lg">
-              Contact Us
+          <div class="col-lg-6">
+            <h1>We help Finding your way...</h1>
+            <button type="button" class="btn btn-dark download-button">
+              <i class="fab fa-apple"></i> Download
             </button>
-            <button type="button" class="btn btn-outline-light btn-lg">
-              Download
+            <button type="button" class="btn btn-outline-light download-button">
+              <i class="fab fa-google-play"></i> Download
             </button>
           </div>
-          <div class="col-lg-6 col-md-4">
-            <img
-              class="title-img"
-              id="titleimg"
-              src="images/baby1.png"
-              alt="Baby Image"
-              srcset=""
-            />
+          <div class="col-lg-6">
+            <img class="img-show" src="images/bus-stop.png" alt="fimy logo" />
           </div>
         </div>
       </div>
     </section>
-    <!-- Feature Section -->
-    <section id="features">
+    <!-- features section -->
+    <section class="features">
       <div class="row">
         <div class="feature-box col-lg-4">
-          <i class="icons fa-5x bi bi-check-circle-fill"></i>
-          <h3>High Quality</h3>
-          <p>fdgdhd dfhdfh Quality</p>
+          <i class="icon fas fa-check-circle fa-5x"></i>
+          <h3>Easy to Use</h3>
+          <p>The app is easy to use among all age groups.</p>
         </div>
         <div class="feature-box col-lg-4">
-          <i class="icons fa-5x bi bi-sort-down"></i>
-          <h3>Cheap Price</h3>
-          <p>High Quality</p>
+          <i class="icon fas fa-compass fa-5x"></i>
+          <h3>Live Location</h3>
+          <p>Keeps track of precise location of vehicles.</p>
         </div>
         <div class="feature-box col-lg-4">
-          <i class="icons fa-5x bi bi-bicycle"></i>
-          <h3>Home Delivery</h3>
-          <p>High Quality</p>
+          <i class="icon fas fa-feather fa-5x"></i>
+          <h3>Light Weight</h3>
+          <p>
+            The app itself is comparitively smaller in size and make use of
+            extensive cloud computing facility.
+          </p>
         </div>
       </div>
     </section>
+
     <!-- testimonial section -->
     <section class="testimonial">
-      <div class="container-fluid">
-        <div
-          id="carouselExampleCaptions"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <h2>
-                All in one place for all age diapers from Babies to Old people.
-              </h2>
-              <img
-                src="images/pampers.jpeg"
-                class="img-testimonial d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <h2>
-                All in one place for all age diapers from Babies to Old people.
-              </h2>
-              <img
-                src="images/huggies.jpeg"
-                class="img-testimonial d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div class="carousel-item">
-              <h2>
-                All in one place for all age diapers from Babies to Old people.
-              </h2>
-              <img
-                src="images/pampers.jpeg"
-                class="img-testimonial d-block w-100"
-                alt="..."
-              />
-            </div>
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h2>
+              Now i dont need to wait at places for my bus. It is now easy to
+              find my bus so easily.
+            </h2>
+            <img
+              class="img-testimonial"
+              src="images/gates.jpg"
+              alt="image of customer"
+            />
+            <em>Bill Gates,New York</em>
           </div>
-          <a
-            class="carousel-control-prev"
-            href="#carouselExampleCaptions"
-            role="button"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselExampleCaptions"
-            role="button"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </a>
+          <div class="carousel-item">
+            <h2>
+              The app is real innovation.It is easy to use and really loved it.
+            </h2>
+            <img
+              class="img-testimonial"
+              src="images/elon.jpg"
+              alt="image of customer"
+            />
+            <em>Elon Musk,Texas</em>
+          </div>
         </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </a>
       </div>
+    </section>
+
+    <section class="press">
+      <img class="img-press" src="images/techcrunch.png" alt="" />
+      <img class="img-press" src="images/mashable.png" alt="" />
     </section>
 
     <!-- Pricing Section -->
@@ -184,17 +169,17 @@
         <div class="pricing-column col-lg-4 col-md-6">
           <div class="card">
             <div class="card-header">
-              <h2>Babies Diapers</h2>
+              <h2>Users</h2>
             </div>
             <div class="card-body">
-              <h3>Rs:300 to Rs:600</h3>
+              <h3>Free</h3>
               <p>Download from online stores</p>
               <p>Ad free</p>
               <button
                 type="button"
                 class="btn btn-lg btn-block btn-outline-dark"
               >
-                Book Now
+                Sign Up
               </button>
             </div>
           </div>
@@ -202,14 +187,14 @@
         <div class="pricing-column col-lg-4 col-md-6">
           <div class="card">
             <div class="card-header">
-              <h2>Adults Diapers</h2>
+              <h2>Taxi-Drivers</h2>
             </div>
             <div class="card-body">
-              <h3>Rs.400/-</h3>
+              <h3>Rs.300/month</h3>
               <p>Keeps you touch with travellers</p>
               <p>Increase your monthly income</p>
               <button type="button" class="btn btn-lg btn-block btn-dark">
-                Book Now
+                Sign Up
               </button>
             </div>
           </div>
@@ -217,14 +202,14 @@
         <div class="pricing-column col-lg-4 col-md-12">
           <div class="card">
             <div class="card-header">
-              <h2>Baby Care</h2>
+              <h2>Companies</h2>
             </div>
             <div class="card-body">
-              <h3>Rs:100 to Rs:2000</h3>
+              <h3>Rs.100/month</h3>
               <p>Manage your resources</p>
               <p>Monthly audit</p>
               <button type="button" class="btn btn-lg btn-block btn-dark">
-                Book Now
+                Sign Up
               </button>
             </div>
           </div>
@@ -234,7 +219,7 @@
 
     <section class="cta">
       <h3 class="cta-heading">
-        Diaper Choice at anytime,anywhere at your fingertips now
+        FindMy bus at anytime,anywhere at your fingertips now
       </h3>
       <button type="button" class="btn btn-dark download-button">
         <i class="fab fa-apple"></i> Download
@@ -248,7 +233,7 @@
       <i class="icon-social fab fa-instagram"></i>
       <i class="icon-social fab fa-facebook"></i>
       <i class="icon-social fab fa-github"></i>
-      <p>© Copyright Diaper Choice 2021</p>
+      <p>© Copyright FiMy 2021</p>
     </footer>
   </body>
 </html>
