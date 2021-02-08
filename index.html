@@ -4,12 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap 5 CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <!-- CSS style file -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- JavaScript Bundle with Popper -->
     <script
@@ -17,41 +24,231 @@
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
       crossorigin="anonymous"
     ></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/603430a21d.js"></script>
     <title>Diaper Choice</title>
   </head>
   <body>
-      <section id="title">
-    <nav class="navbar navbar-expand-lg navbar-light style="background-color: #a4ebf3;">
+    <!-- Title Section -->
+    <section id="title">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Diaper Choice</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Download</a>
-            </li>
-          </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Diaper Choice</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">Download</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="row">
+          <div class="col-lg-6 col-md-4">
+            <h1 id="mainhead">High Quality Diapere at Cheep Price</h1>
+            <button type="button" class="btn btn-dark btn-lg">
+              Contact Us
+            </button>
+            <button type="button" class="btn btn-outline-light btn-lg">
+              Download
+            </button>
+          </div>
+          <div class="col-lg-6 col-md-4">
+            <img
+              class="title-img"
+              id="titleimg"
+              src="images/baby1.png"
+              alt="Baby Image"
+              srcset=""
+            />
+          </div>
         </div>
       </div>
-    </nav>
-    <h2>Hello World</h2>
-    <img id="titleimg" src="images/baby1.jpg" alt="Baby Image" srcset="">
-</section>
+    </section>
+    <!-- Feature Section -->
+    <section id="features">
+      <div class="row">
+        <div class="feature-box col-lg-4">
+          <i class="icons fa-5x bi bi-check-circle-fill"></i>
+          <h3>High Quality</h3>
+          <p>fdgdhd dfhdfh Quality</p>
+        </div>
+        <div class="feature-box col-lg-4">
+          <i class="icons fa-5x bi bi-sort-down"></i>
+          <h3>Cheap Price</h3>
+          <p>High Quality</p>
+        </div>
+        <div class="feature-box col-lg-4">
+          <i class="icons fa-5x bi bi-bicycle"></i>
+          <h3>Home Delivery</h3>
+          <p>High Quality</p>
+        </div>
+      </div>
+    </section>
+    <!-- testimonial section -->
+    <section class="testimonial">
+      <div class="container-fluid">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h2>
+                All in one place for all age diapers from Babies to Old people.
+              </h2>
+              <img
+                src="images/pampers.jpeg"
+                class="img-testimonial d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <h2>
+                All in one place for all age diapers from Babies to Old people.
+              </h2>
+              <img
+                src="images/huggies.jpeg"
+                class="img-testimonial d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <h2>
+                All in one place for all age diapers from Babies to Old people.
+              </h2>
+              <img
+                src="images/pampers.jpeg"
+                class="img-testimonial d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleCaptions"
+            role="button"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+      <h2>A plan for every type of users out there</h2>
+      <p>Affordable and reasonable pricing.</p>
+      <div class="row">
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h2>Babies Diapers</h2>
+            </div>
+            <div class="card-body">
+              <h3>Rs:300 to Rs:600</h3>
+              <p>Download from online stores</p>
+              <p>Ad free</p>
+              <button
+                type="button"
+                class="btn btn-lg btn-block btn-outline-dark"
+              >
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h2>Adults Diapers</h2>
+            </div>
+            <div class="card-body">
+              <h3>Rs.400/-</h3>
+              <p>Keeps you touch with travellers</p>
+              <p>Increase your monthly income</p>
+              <button type="button" class="btn btn-lg btn-block btn-dark">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="pricing-column col-lg-4 col-md-12">
+          <div class="card">
+            <div class="card-header">
+              <h2>Baby Care</h2>
+            </div>
+            <div class="card-body">
+              <h3>Rs:100 to Rs:2000</h3>
+              <p>Manage your resources</p>
+              <p>Monthly audit</p>
+              <button type="button" class="btn btn-lg btn-block btn-dark">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h3 class="cta-heading">
+        Diaper Choice at anytime,anywhere at your fingertips now
+      </h3>
+      <button type="button" class="btn btn-dark download-button">
+        <i class="fab fa-apple"></i> Download
+      </button>
+      <button type="button" class="btn btn-outline-light download-button">
+        <i class="fab fa-google-play"></i> Download
+      </button>
+    </section>
+
+    <footer id="foot">
+      <i class="icon-social fab fa-instagram"></i>
+      <i class="icon-social fab fa-facebook"></i>
+      <i class="icon-social fab fa-github"></i>
+      <p>© Copyright Diaper Choice 2021</p>
+    </footer>
   </body>
 </html>
